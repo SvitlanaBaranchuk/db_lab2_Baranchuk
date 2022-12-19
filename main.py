@@ -23,7 +23,8 @@ GROUP BY category.name_category;
 query_3 = '''
 SELECT COUNT(video_id), publish_time
 FROM video
-GROUP BY publish_time;
+GROUP BY publish_time
+ORDER BY publish_time;
 '''
 
 conn1 = psycopg2.connect(user=username, password=password, dbname=database, host=host, port=port)
