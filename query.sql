@@ -13,4 +13,5 @@ GROUP BY category.name_category;
 -- 3. Знайти кількість відео, які потрапили в рекомендації, за кожною з дат.
 SELECT COUNT(video_id), publish_time
 FROM video
-GROUP BY publish_time;
+GROUP BY publish_time
+ORDER BY publish_time;
